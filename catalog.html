@@ -1,3 +1,4 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,11 +10,13 @@
 <body>
     <header>
         <section class="top-bar">
-            <!-- Two-line hamburger menu button -->
-            <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+            <!-- CSS-only two-line hamburger using a hidden checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-hidden="true">
+            <label for="menu-toggle" class="menu-icon" aria-label="Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </button>
+            </label>
+
             <nav>
                 <ul class="nav-list">
                     <li><a href="index.html">Acuil</a></li>
@@ -26,42 +29,15 @@
         </section>
     </header>
     <main>
-        <section class="product-list">
-            <article class="product-item">
-                <h2>Product 1</h2>
-                <p>Description of Product 1.</p>
-                <span class="price">$10.00</span>
-            </article>
-            <article class="product-item">
-                <h2>Product 2</h2>
-                <p>Description of Product 2.</p>
-                <span class="price">$20.00</span>
-            </article>
-            <article class="product-item">
-                <h2>Product 3</h2>
-                <p>Description of Product 3.</p>
-                <span class="price">$30.00</span>
-            </article>
-            <!-- More products can be added here -->
-        </section>
+        
+       
     </main>
     <footer>
         <p>&copy; 2024 Your Company Name</p>
     </footer>
 
-    <script>
-        // Toggle the navigation on small screens
-        (function(){
-            const btn = document.querySelector('.menu-toggle');
-            const navList = document.querySelector('.nav-list');
-            if (!btn || !navList) return;
-            btn.addEventListener('click', function(){
-                const expanded = btn.getAttribute('aria-expanded') === 'true';
-                btn.setAttribute('aria-expanded', String(!expanded));
-                navList.classList.toggle('open');
-            });
-        })();
-    </script>
+    <!-- removed JavaScript per request -->
 
 </body>
 </html>
+<!-- ...existing code... -->

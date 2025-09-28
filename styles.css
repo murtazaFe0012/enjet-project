@@ -1,64 +1,61 @@
-/* Basic reset */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { 
-    font-family: Arial, Helvetica, sans-serif; 
-    line-height: 1.4; 
-    }
+/* ...existing code... */
 
-/* Top bar/header */
-.top-bar { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 12px 20px; 
-    background: #f8f8f8; 
-    border-bottom: 1px solid #e5e5e5; 
-    }
+/* Two-line rounded hamburger (CSS-only) */
+.top-bar { align-items:center; display:flex; justify-content:space-between; gap:1rem; padding:12px 16px; }
 
+.menu-toggle-checkbox {
+  /* keep checkbox in DOM for CSS toggling, hide visually */
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
 
-/* Navigation list horizontal */
-nav .nav-list { list-style: none; display: flex; gap: 18px; }
-nav .nav-list li a { text-decoration: none; color: #111; padding: 6px 8px; display: inline-block; }
-nav .nav-list li a:hover { background: #eaeaea; border-radius: 4px; }
+.menu-icon {
+  display: none; /* shown only on small screens via media query below */
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background: transparent;
+  border: 0;
+}
 
-/* Make nav responsive: collapse into hidden column on small screens */
+/* two thick rounded bars */
+.menu-icon .bar {
+  display: block;
+  width: 56px;        /* length of the rounded rectangle */
+  height: 12px;       /* thickness */
+  background: #333;   /* color of the bars */
+  border-radius: 10px;/* rounded ends */
+  margin: 8px 0;      /* vertical spacing between the two bars */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
+}
+
+/* Responsive: show icon and collapse nav on small screens */
 @media (max-width: 700px) {
-    .menu-toggle { display: inline-block; }
-    nav .nav-list { 
-        position: absolute; 
-        top: 60px; 
-        right: 20px; 
-        background: white; 
-        flex-direction: column; 
-        gap: 8px; 
-        padding: 10px; 
-        border: 1px solid #ddd; 
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-        display: none; /* hidden by default */
-    }
-    nav .nav-list.open { display: flex; }
+  .menu-icon { display: flex; }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    z-index: 20;
+  }
+
+  /* When checkbox is checked, show nav (pure CSS toggle) */
+  .menu-toggle-checkbox:checked ~ nav .nav-list {
+    display: flex;
+  }
 }
 
-/* Product list styles (simple grid) */
-.product-list { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 16px; padding: 20px; 
-}
-.product-item { 
-    border: 1px solid #e5e5e5; 
-    padding: 12px; 
-    border-radius: 6px; 
-    background: #fff; 
-}
-.price { 
-    display: inline-block; 
-    margin-top: 8px; 
-    font-weight: bold; 
-}
-
-footer { 
-    text-align: center;
-     padding: 12px; 
-     color: #666; 
-    }
+/* ...existing code... */
