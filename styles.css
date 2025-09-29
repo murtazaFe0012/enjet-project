@@ -86,17 +86,12 @@ header {
   transform: translate(-50%, -50%);
   color: black;
   text-align: center;
-  text-shadow: 2px 2px 5px black;
- 
+  font-size: 48px;
+  font-weight: 600;
+  font-family: 'Bebas Neue', cursive;
 }
 
-
-.hero-text h1 {
-  font-family: "bebas neue", sans-serif;  /* Example of a decorative*/
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
+#title
 .hero-text p {
   font-size: 1.5rem;
 }
