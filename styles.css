@@ -8,6 +8,13 @@ header {
     background-color: #65a2ff;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
 .menu{
     margin-left:20px;
     display: flex;
