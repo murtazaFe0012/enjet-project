@@ -91,7 +91,10 @@ header {
   font-family: 'Bebas Neue', cursive;
 }
 
-#title
+#title {
+  font-family: 'Bebas Neue', cursive;
+  }
+  
 .hero-text p {
   font-size: 1.5rem;
 }
