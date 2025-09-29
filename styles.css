@@ -88,13 +88,12 @@ header {
   text-align: center;
   font-size: 48px;
   font-weight: 600;
-  font-family: 'Bebas Neue', cursive;
 }
 
 #title {
   font-family: 'Bebas Neue', cursive;
   }
-  
+
 .hero-text p {
   font-size: 1.5rem;
 }
