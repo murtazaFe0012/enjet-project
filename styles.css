@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+
+header {
+  background: rgba(101,162,255, 0.6);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 15px 30px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar a.menu-link:hover {
+  text-decoration: none;
+  color: #2b07a2;
+}
+
+.menu-link {
+  line-height: 1;
+  font-size: 1.1rem;  
+}
+
+
+.hero {
+  position: relative;
+  height: 90vh;
+  margin-top: 0px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-reservez {
+  display: inline-block;
+  padding: 12px 70px;
+  background-color:rgb(101, 163, 255); 
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 16px;
+  transition: background 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  border-radius: 14px;
+}
+.btn-reservez:hover {
+  background-color: #0056b3; 
+}
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+ 
+}
+
+
+.hero-text h1 {
+  font-family: "bebas neue", sans-serif;  /* Example of a decorative*/
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+
+.zones {
+  padding: 50px;
+}
+
+.zone {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.zone.reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.zone img {
+  width: 40%;
+  border-radius: 40px;
+}
+
+.zone.reverse .texte {
+  text-align: left;    
+  flex: 1; 
+}
+
+.zone h2 {
+  margin-bottom: 15px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+footer {
+  background:rgba(101,162,255, 1);
+  padding: 30px 50px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr; 
+  gap: 40px;
+  align-items: start;
+}
+
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-socials img {
+  width: 25px;
+  height: 25px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.footer-socials img:hover {
+  filter: grayscale(0%); 
+}
+
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+}
+
