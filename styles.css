@@ -100,43 +100,37 @@ header {
 }
 
 
+
 .zones {
-  padding: 50px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 12px;
 }
 
-.zone {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
+
+.zone-img {
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.zone-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
   text-align: left;
-  margin-left: 30px;
+  z-index: 2;
+  font-weight: bold;
 }
 
-.zone.reverse {
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-items: center;
-  margin-left: 120px;
-}
-
-.zone img {
-  width: 40%;
-  border-radius: 40px;
-}
-
-.zone.reverse .texte {
-  text-align: left;    
-  flex: 1; 
-}
-
-.zone h2 {
-  margin-bottom: 15px;
-}
 
 .green {
   color: green;
+  text-align: center;
 }
 
 .red {
