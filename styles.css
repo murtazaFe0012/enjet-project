@@ -79,9 +79,10 @@ header {
 .btn-reservez:hover {
   background-color: #0056b3; 
 }
+
 .hero-text {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
@@ -90,9 +91,9 @@ header {
   font-weight: 600;
 }
 
-#title {
-  font-family: 'Bebas Neue', cursive;
-  }
+.hero-text h1 {
+  font-family: bebas neue, cursive ;
+}
 
 .hero-text p {
   font-size: 1.5rem;
