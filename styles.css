@@ -1,6 +1,6 @@
 body {
     margin:auto;
-    background-color:rgb(19, 22, 22)
+    background-color:azure;
 }
 
 header {
@@ -14,13 +14,15 @@ header {
     align-items: center;
     padding: 10px 20px;
     flex-direction: row;
+
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     gap: 20px;
-    align-items: center;;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
   
 }
 
@@ -31,6 +33,41 @@ header {
     font-size: 18px;
 }
 
+.left-section {
+    display: flex;
+    align-items: flex-end;
+}
+
+.right-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30em;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.menu-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:#65a2ff;
+    color: white;
+    font-weight: bold; /*je utilise le font bold*/
+    cursor: pointer;
+    font-size: 16px;
+}
 .menu{
     margin-left:20px;
     display: flex;
@@ -42,7 +79,7 @@ header {
 .menu-icon {
    
     width: 35px;
-    height: 5px;
+    height: 3px;
     background-color: black;
     margin: 6px 0;
     border-radius: 10px;
