@@ -1,6 +1,6 @@
 body {
     margin:auto;
-    background-color:azure
+    background-color:rgb(19, 22, 22)
 }
 
 header {
@@ -13,6 +13,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    flex-direction: row;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;;
+  
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .menu{
